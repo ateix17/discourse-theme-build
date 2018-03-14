@@ -186,33 +186,49 @@ span.first {
   }
 }
 /* Nerdwallet footer styles */
-/* import main styles */
-/**
+.global-footer {
+  /* import main styles */
+  /**
  * Footer link
  */
-.link {
+  /**
+ * Footer container
+ */
+  /**
+ * Main nav
+ */
+  /**
+ * Copyright
+ */
+  /**
+ * Policy Container
+ *
+ * N logo - "Rights reserved" text - Terms of Use and Privacy Policy
+ */
+  /**
+ * Disclaimer
+ */
+}
+.global-footer .link {
   touch-action: manipulation;
   text-decoration: none;
   transition: color 0.1s ease;
 }
-.link:focus {
+.global-footer .link:focus {
   outline: 4px solid rgba(157, 205, 250, 0.5);
 }
-.link,
-.link:link,
-.link:link:visited,
-.link:visited {
+.global-footer .link,
+.global-footer .link:link,
+.global-footer .link:link:visited,
+.global-footer .link:visited {
   color: white;
 }
-.link:hover,
-.link:link:hover {
+.global-footer .link:hover,
+.global-footer .link:link:hover {
   text-decoration: none;
   color: #008255;
 }
-/**
- * Footer container
- */
-.footer {
+.global-footer .footer {
   background-color: #464646;
   padding: 1.75rem;
   font-family: Gotham, system-ui, sans-serif;
@@ -222,107 +238,104 @@ span.first {
   color: #D2D7DC;
 }
 @media (min-width: 27.5rem) {
-  .footer {
+  .global-footer .footer {
     padding: calc(1.75rem + 0.25 * (100vw - 27.5rem) / 54.5);
   }
 }
 @media (min-width: 82rem) {
-  .footer {
+  .global-footer .footer {
     padding: 2rem;
   }
 }
-.innerContainer {
+.global-footer .innerContainer {
   margin-left: auto;
   margin-right: auto;
   /* @TODO: Should this use PageContainer? */
   max-width: 1050px;
 }
-.row {
+.global-footer .row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 @media (min-width: 45rem) {
-  .row {
+  .global-footer .row {
     flex-flow: row;
   }
 }
-/**
- * Main nav
- */
-.nav {
+.global-footer .nav {
   display: flex;
   margin-bottom: 0.5rem;
   flex-flow: row wrap;
 }
 @media (min-width: 45rem) {
-  .nav {
+  .global-footer .nav {
     margin-bottom: 0;
   }
 }
-.navLink {
+.global-footer .navLink {
   margin-bottom: 0.5rem;
   composes: link;
 }
-.column {
+.global-footer .column {
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
   min-width: 120px;
 }
-.rightContainer {
+.global-footer .rightContainer {
   align-items: flex-end;
 }
 @media (min-width: 45rem) {
-  .rightContainer {
+  .global-footer .rightContainer {
     display: flex;
   }
 }
 @media (min-width: 45rem) {
-  .rightContainer {
+  .global-footer .rightContainer {
     flex-direction: column;
   }
 }
-.message {
+.global-footer .message {
   margin-bottom: 1rem;
 }
 @media (min-width: 45rem) {
-  .message {
+  .global-footer .message {
     text-align: right;
   }
 }
 @media breakpoint-wide {
-  .message {
+  .global-footer .message {
     max-width: 400px;
   }
 }
-.socialIconsContainer {
+.global-footer .socialIconsContainer {
   margin-bottom: 1rem;
 }
 @media (min-width: 45rem) {
-  .socialIconsContainer {
+  .global-footer .socialIconsContainer {
     text-align: right;
   }
 }
-.socialIcon {
+.global-footer .socialIcon {
   display: inline-block;
   margin-left: 1rem;
   vertical-align: top;
   font-size: 0;
   line-height: 0;
 }
-.socialIcon:first-child {
+.global-footer .socialIcon:first-child {
   margin-left: 0;
 }
-.socialIcon a {
+.global-footer .socialIcon a {
   display: inline-block;
   background-color: #747679;
   width: 35px;
   height: 35px;
   border-radius: 100%;
 }
-.socialIcon a::before {
+.global-footer .socialIcon a::before {
   content: "";
   display: block;
   overflow: hidden;
@@ -334,116 +347,105 @@ span.first {
   background-position-x: 0%;
   background-position-y: 50%;
 }
-.socialIconTwitter {
+.global-footer .socialIconTwitter {
   composes: socialIcon;
 }
-.socialIconTwitter a:hover {
+.global-footer .socialIconTwitter a:hover {
   background-color: #00aced;
 }
-.socialIconFacebook {
+.global-footer .socialIconFacebook {
   composes: socialIcon;
 }
-.socialIconFacebook a::before {
+.global-footer .socialIconFacebook a::before {
   background-position: -21px center;
   background-position-x: 50%;
 }
-.socialIconFacebook a:hover {
+.global-footer .socialIconFacebook a:hover {
   background-color: #3b5998;
 }
-.socialIconInstagram {
+.global-footer .socialIconInstagram {
   composes: socialIcon;
 }
-.socialIconInstagram a::before {
+.global-footer .socialIconInstagram a::before {
   background-position: -42px center;
   background-position-x: 100%;
 }
-.socialIconInstagram a:hover {
+.global-footer .socialIconInstagram a:hover {
   background-color: #517fa4;
 }
 @media (min-width: 45rem) {
-  .appLinkContainer {
+  .global-footer .appLinkContainer {
     text-align: right;
   }
 }
 @media breakpoint-wide {
-  .appLinkContainer {
+  .global-footer .appLinkContainer {
     white-space: nowrap;
   }
 }
-.appLink {
+.global-footer .appLink {
   display: inline-block;
   margin-right: 1rem;
   vertical-align: top;
   font-size: 0;
   line-height: 0;
 }
-.appLink:last-child {
+.global-footer .appLink:last-child {
   margin-right: 0;
 }
-.appLink a {
+.global-footer .appLink a {
   display: inline-block;
   width: 135px;
   height: 40px;
   background-repeat: no-repeat;
   border-radius: 4px;
 }
-.appLinkAppleStore {
+.global-footer .appLinkAppleStore {
   composes: appLink;
 }
-.appLinkAppleStore a {
+.global-footer .appLinkAppleStore a {
   background: url(//cdn.nerdwallet.com/img/icons/global-footer/Download_on_the_App_Store_Badge_US-UK_135x40.svg);
   background-size: 100%;
 }
-.appLinkGooglePlay {
+.global-footer .appLinkGooglePlay {
   composes: appLink;
 }
-.appLinkGooglePlay a {
+.global-footer .appLinkGooglePlay a {
   background: url(https://play.google.com/intl/en_us/badges/images/badge_new.png);
   background-size: 100%;
 }
-/**
- * Copyright
- */
-.copyrightImage {
+.global-footer .copyrightImage {
   width: 30px;
   height: 30px;
 }
-.copyRightText {
+.global-footer .copyRightText {
   color: #94A2A8;
   margin-left: 0.25rem;
 }
-/**
- * Policy Container
- *
- * N logo - "Rights reserved" text - Terms of Use and Privacy Policy
- */
-.policyContainer {
+.global-footer .policyContainer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
-.policyRightsContainer {
+.global-footer .policyRightsContainer {
   margin-right: 1rem;
 }
-.policyNavContainer {
+.global-footer .policyNavContainer {
   text-align: right;
 }
-.policyLink {
+.global-footer .policyLink {
   display: inline-block;
   composes: link;
 }
-.policyLink {
+.global-footer .policyLink {
   margin-right: 0.5rem;
 }
-.policyLink:last-child {
+.global-footer .policyLink:last-child {
   margin-right: 0;
 }
-/**
- * Disclaimer
- */
-.disclaimer {
+.global-footer .disclaimer {
   border-top-style: solid;
   border-top-width: 1px;
   border-color: #94A2A8;
@@ -451,6 +453,35 @@ span.first {
   font-size: 11px;
   line-height: 14px;
 }
-.disclaimer :global(.title) {
+.global-footer .disclaimer :global(.title) {
   font-weight: 500;
+}
+.global-footer .socialIcon {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.global-footer .socialIcon:first-child {
+  margin-left: 0;
+}
+.global-footer .socialIcon a {
+  display: inline-block;
+  background-color: #747679;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.global-footer .socialIcon a::before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  width: 21px;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent url(//cdn.nerdwallet.com/img/icons/global-footer/Footer_Social_Icons.svg) no-repeat 0 center;
+  background-size: 300% auto;
+  background-position-x: 0%;
+  background-position-y: 50%;
 }

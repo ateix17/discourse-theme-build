@@ -187,6 +187,8 @@ span.first {
 }
 /* Nerdwallet footer styles */
 .global-footer {
+  /* reset some discourse styles */
+  /* import styles from our global nav package */
   /* import main styles */
   /**
  * Footer link
@@ -208,6 +210,15 @@ span.first {
   /**
  * Disclaimer
  */
+  /* supplement with some other styles */
+  background-color: #000;
+  /* override that package where it uses `composes` which we can't transpile */
+  /* notice camelcase classnames due to css-modules */
+}
+.global-footer .message {
+  border-width: 0;
+  background-color: transparent;
+  padding: 0;
 }
 .global-footer .link {
   touch-action: manipulation;
@@ -484,4 +495,21 @@ span.first {
   background-size: 300% auto;
   background-position-x: 0%;
   background-position-y: 50%;
+}
+.global-footer .socialIconTwitter a:hover {
+  background-color: #00aced;
+}
+.global-footer .socialIconFacebook a::before {
+  background-position: -21px center;
+  background-position-x: 50%;
+}
+.global-footer .socialIconFacebook a:hover {
+  background-color: #3b5998;
+}
+.global-footer .socialIconInstagram a::before {
+  background-position: -42px center;
+  background-position-x: 100%;
+}
+.global-footer .socialIconInstagram a:hover {
+  background-color: #517fa4;
 }

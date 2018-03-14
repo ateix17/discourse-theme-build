@@ -1,107 +1,85 @@
-// topic list
-.topic-list th, .topic-list td {
+.topic-list th,
+.topic-list td {
   padding: 7px 7px !important;
 }
-
 .topic-list td {
   background: #fff !important;
 }
-
-// topic post overrides
 .topic-post {
   padding: 12px !important;
   background: #fff !important;
   border-radius: 4px !important;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.07) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07) !important;
   border: 1px solid #dcdcde !important;
   margin-bottom: 16px;
 }
-
 .topic-post article {
   border-top: 1px solid transparent !important;
 }
-
 .topic-meta-data {
   font-size: .8125em !important;
 }
-
 .topic-status-info {
   border-top: 1px solid #D2D7DC !important;
 }
-
-.topic-list>tbody>tr:first-of-type {
+.topic-list > tbody > tr:first-of-type {
   border-top: 1px solid #D2D7DC !important;
 }
-
-.topic-list>tbody>tr {
+.topic-list > tbody > tr {
   border-bottom: 1px solid #D2D7DC !important;
 }
-
-.topic-list-main-link, .topic-list .main-link {
+.topic-list-main-link,
+.topic-list .main-link {
   font-size: 1rem !important;
 }
-
 .topic-list .posts-map {
   font-size: 1rem !important;
 }
-
-// topic progress bar
 #topic-progress {
   border-right: 1px solid #40AD87 !important;
   background-color: #40AD87 !important;
   color: #fff !important;
 }
-
 #topic-progress .bg {
   border-right: 1px solid #008255 !important;
   background-color: #008255 !important;
 }
-
-// suggested topics
 #suggested-topics {
   margin-bottom: 20px !important;
   padding: 20px 12px 15px 12px !important;
   background: #fff !important;
   border-radius: 4px !important;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.07) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07) !important;
   border: 1px solid #dcdcde !important;
 }
-
-// user profile
-.user-main .about.collapsed-info .details, .user-main .about {
+.user-main .about.collapsed-info .details,
+.user-main .about {
   background: transparent !important;
 }
-
 .mobile-view .mobile-nav {
   font-size: 12px !important;
   text-transform: uppercase !important;
   line-height: 1.2 !important;
   letter-spacing: .0625em !important;
 }
-
-.mobile-view .mobile-nav {
-  &.messages-nav,
-  &.notifications-nav,
-  &.activity-nav,
-  &.preferences-nav {
-    top: -50px !important;
-  }
+.mobile-view .mobile-nav.messages-nav,
+.mobile-view .mobile-nav.notifications-nav,
+.mobile-view .mobile-nav.activity-nav,
+.mobile-view .mobile-nav.preferences-nav {
+  top: -50px !important;
 }
-
 .user-main .about .details {
   background: transparent;
 }
-
 .user-main .about .secondary {
   font-size: 12px !important;
   line-height: 1.2 !important;
   letter-spacing: .0625em !important;
 }
-
-.user-stream .item, .user-stream .user-stream-item {
+.user-stream .item,
+.user-stream .user-stream-item {
   padding: 20px 12px 15px 12px !important;
 }
-
 .user-right {
   margin: 10px 0 20px 0 !important;
 }

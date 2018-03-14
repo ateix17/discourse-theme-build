@@ -186,7 +186,7 @@ span.first {
   }
 }
 /* Nerdwallet footer styles */
-.global-footer {
+.nw-global-footer {
   /* reset some discourse styles */
   /* import styles from our global nav package */
   /* import main styles */
@@ -215,31 +215,31 @@ span.first {
   /* override that package where it uses `composes` which we can't transpile */
   /* notice camelcase classnames due to css-modules */
 }
-.global-footer .message {
+.nw-global-footer .message {
   border-width: 0;
   background-color: transparent;
   padding: 0;
 }
-.global-footer .link {
+.nw-global-footer .link {
   touch-action: manipulation;
   text-decoration: none;
   transition: color 0.1s ease;
 }
-.global-footer .link:focus {
+.nw-global-footer .link:focus {
   outline: 4px solid rgba(157, 205, 250, 0.5);
 }
-.global-footer .link,
-.global-footer .link:link,
-.global-footer .link:link:visited,
-.global-footer .link:visited {
+.nw-global-footer .link,
+.nw-global-footer .link:link,
+.nw-global-footer .link:link:visited,
+.nw-global-footer .link:visited {
   color: white;
 }
-.global-footer .link:hover,
-.global-footer .link:link:hover {
+.nw-global-footer .link:hover,
+.nw-global-footer .link:link:hover {
   text-decoration: none;
   color: #008255;
 }
-.global-footer .footer {
+.nw-global-footer .footer {
   background-color: #464646;
   padding: 1.75rem;
   font-family: Gotham, system-ui, sans-serif;
@@ -249,104 +249,104 @@ span.first {
   color: #D2D7DC;
 }
 @media (min-width: 27.5rem) {
-  .global-footer .footer {
+  .nw-global-footer .footer {
     padding: calc(1.75rem + 0.25 * (100vw - 27.5rem) / 54.5);
   }
 }
 @media (min-width: 82rem) {
-  .global-footer .footer {
+  .nw-global-footer .footer {
     padding: 2rem;
   }
 }
-.global-footer .innerContainer {
+.nw-global-footer .innerContainer {
   margin-left: auto;
   margin-right: auto;
   /* @TODO: Should this use PageContainer? */
   max-width: 1050px;
 }
-.global-footer .row {
+.nw-global-footer .row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 @media (min-width: 45rem) {
-  .global-footer .row {
+  .nw-global-footer .row {
     flex-flow: row;
   }
 }
-.global-footer .nav {
+.nw-global-footer .nav {
   display: flex;
   margin-bottom: 0.5rem;
   flex-flow: row wrap;
 }
 @media (min-width: 45rem) {
-  .global-footer .nav {
+  .nw-global-footer .nav {
     margin-bottom: 0;
   }
 }
-.global-footer .navLink {
+.nw-global-footer .navLink {
   margin-bottom: 0.5rem;
   composes: link;
 }
-.global-footer .column {
+.nw-global-footer .column {
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
   min-width: 120px;
 }
-.global-footer .rightContainer {
+.nw-global-footer .rightContainer {
   align-items: flex-end;
 }
 @media (min-width: 45rem) {
-  .global-footer .rightContainer {
+  .nw-global-footer .rightContainer {
     display: flex;
   }
 }
 @media (min-width: 45rem) {
-  .global-footer .rightContainer {
+  .nw-global-footer .rightContainer {
     flex-direction: column;
   }
 }
-.global-footer .message {
+.nw-global-footer .message {
   margin-bottom: 1rem;
 }
 @media (min-width: 45rem) {
-  .global-footer .message {
+  .nw-global-footer .message {
     text-align: right;
   }
 }
 @media breakpoint-wide {
-  .global-footer .message {
+  .nw-global-footer .message {
     max-width: 400px;
   }
 }
-.global-footer .socialIconsContainer {
+.nw-global-footer .socialIconsContainer {
   margin-bottom: 1rem;
 }
 @media (min-width: 45rem) {
-  .global-footer .socialIconsContainer {
+  .nw-global-footer .socialIconsContainer {
     text-align: right;
   }
 }
-.global-footer .socialIcon {
+.nw-global-footer .socialIcon {
   display: inline-block;
   margin-left: 1rem;
   vertical-align: top;
   font-size: 0;
   line-height: 0;
 }
-.global-footer .socialIcon:first-child {
+.nw-global-footer .socialIcon:first-child {
   margin-left: 0;
 }
-.global-footer .socialIcon a {
+.nw-global-footer .socialIcon a {
   display: inline-block;
   background-color: #747679;
   width: 35px;
   height: 35px;
   border-radius: 100%;
 }
-.global-footer .socialIcon a::before {
+.nw-global-footer .socialIcon a::before {
   content: "";
   display: block;
   overflow: hidden;
@@ -358,105 +358,105 @@ span.first {
   background-position-x: 0%;
   background-position-y: 50%;
 }
-.global-footer .socialIconTwitter {
+.nw-global-footer .socialIconTwitter {
   composes: socialIcon;
 }
-.global-footer .socialIconTwitter a:hover {
+.nw-global-footer .socialIconTwitter a:hover {
   background-color: #00aced;
 }
-.global-footer .socialIconFacebook {
+.nw-global-footer .socialIconFacebook {
   composes: socialIcon;
 }
-.global-footer .socialIconFacebook a::before {
+.nw-global-footer .socialIconFacebook a::before {
   background-position: -21px center;
   background-position-x: 50%;
 }
-.global-footer .socialIconFacebook a:hover {
+.nw-global-footer .socialIconFacebook a:hover {
   background-color: #3b5998;
 }
-.global-footer .socialIconInstagram {
+.nw-global-footer .socialIconInstagram {
   composes: socialIcon;
 }
-.global-footer .socialIconInstagram a::before {
+.nw-global-footer .socialIconInstagram a::before {
   background-position: -42px center;
   background-position-x: 100%;
 }
-.global-footer .socialIconInstagram a:hover {
+.nw-global-footer .socialIconInstagram a:hover {
   background-color: #517fa4;
 }
 @media (min-width: 45rem) {
-  .global-footer .appLinkContainer {
+  .nw-global-footer .appLinkContainer {
     text-align: right;
   }
 }
 @media breakpoint-wide {
-  .global-footer .appLinkContainer {
+  .nw-global-footer .appLinkContainer {
     white-space: nowrap;
   }
 }
-.global-footer .appLink {
+.nw-global-footer .appLink {
   display: inline-block;
   margin-right: 1rem;
   vertical-align: top;
   font-size: 0;
   line-height: 0;
 }
-.global-footer .appLink:last-child {
+.nw-global-footer .appLink:last-child {
   margin-right: 0;
 }
-.global-footer .appLink a {
+.nw-global-footer .appLink a {
   display: inline-block;
   width: 135px;
   height: 40px;
   background-repeat: no-repeat;
   border-radius: 4px;
 }
-.global-footer .appLinkAppleStore {
+.nw-global-footer .appLinkAppleStore {
   composes: appLink;
 }
-.global-footer .appLinkAppleStore a {
+.nw-global-footer .appLinkAppleStore a {
   background: url(//cdn.nerdwallet.com/img/icons/global-footer/Download_on_the_App_Store_Badge_US-UK_135x40.svg);
   background-size: 100%;
 }
-.global-footer .appLinkGooglePlay {
+.nw-global-footer .appLinkGooglePlay {
   composes: appLink;
 }
-.global-footer .appLinkGooglePlay a {
+.nw-global-footer .appLinkGooglePlay a {
   background: url(https://play.google.com/intl/en_us/badges/images/badge_new.png);
   background-size: 100%;
 }
-.global-footer .copyrightImage {
+.nw-global-footer .copyrightImage {
   width: 30px;
   height: 30px;
 }
-.global-footer .copyRightText {
+.nw-global-footer .copyRightText {
   color: #94A2A8;
   margin-left: 0.25rem;
 }
-.global-footer .policyContainer {
+.nw-global-footer .policyContainer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
-.global-footer .policyRightsContainer {
+.nw-global-footer .policyRightsContainer {
   margin-right: 1rem;
 }
-.global-footer .policyNavContainer {
+.nw-global-footer .policyNavContainer {
   text-align: right;
 }
-.global-footer .policyLink {
+.nw-global-footer .policyLink {
   display: inline-block;
   composes: link;
 }
-.global-footer .policyLink {
+.nw-global-footer .policyLink {
   margin-right: 0.5rem;
 }
-.global-footer .policyLink:last-child {
+.nw-global-footer .policyLink:last-child {
   margin-right: 0;
 }
-.global-footer .disclaimer {
+.nw-global-footer .disclaimer {
   border-top-style: solid;
   border-top-width: 1px;
   border-color: #94A2A8;
@@ -464,27 +464,27 @@ span.first {
   font-size: 11px;
   line-height: 14px;
 }
-.global-footer .disclaimer :global(.title) {
+.nw-global-footer .disclaimer :global(.title) {
   font-weight: 500;
 }
-.global-footer .socialIcon {
+.nw-global-footer .socialIcon {
   display: inline-block;
   margin-left: 1rem;
   vertical-align: top;
   font-size: 0;
   line-height: 0;
 }
-.global-footer .socialIcon:first-child {
+.nw-global-footer .socialIcon:first-child {
   margin-left: 0;
 }
-.global-footer .socialIcon a {
+.nw-global-footer .socialIcon a {
   display: inline-block;
   background-color: #747679;
   width: 35px;
   height: 35px;
   border-radius: 100%;
 }
-.global-footer .socialIcon a::before {
+.nw-global-footer .socialIcon a::before {
   content: "";
   display: block;
   overflow: hidden;
@@ -496,20 +496,20 @@ span.first {
   background-position-x: 0%;
   background-position-y: 50%;
 }
-.global-footer .socialIconTwitter a:hover {
+.nw-global-footer .socialIconTwitter a:hover {
   background-color: #00aced;
 }
-.global-footer .socialIconFacebook a::before {
+.nw-global-footer .socialIconFacebook a::before {
   background-position: -21px center;
   background-position-x: 50%;
 }
-.global-footer .socialIconFacebook a:hover {
+.nw-global-footer .socialIconFacebook a:hover {
   background-color: #3b5998;
 }
-.global-footer .socialIconInstagram a::before {
+.nw-global-footer .socialIconInstagram a::before {
   background-position: -42px center;
   background-position-x: 100%;
 }
-.global-footer .socialIconInstagram a:hover {
+.nw-global-footer .socialIconInstagram a:hover {
   background-color: #517fa4;
 }

@@ -6,5 +6,4 @@ Import via Discourse /admin > customize.
 
 ### Development
 The files in this repo are automatically generated and should not be modified directly.
-See https://github.com/nerdwallet/discourse-theme .
-
+See https://github.com/nerdwallet/discourse-theme.

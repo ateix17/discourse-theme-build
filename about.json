@@ -7,7 +7,7 @@
         "gothambold": "assets/GothamBold.woff2"
    },
    "color_schemes": {
-     "NW-discourse-experimental": {
+     "NW-discourse-theme": {
        "primary": "000000",
        "secondary": "ffffff",
        "tertiary": "005fb9",

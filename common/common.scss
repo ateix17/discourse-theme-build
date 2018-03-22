@@ -22,8 +22,10 @@ h3 {
   color: $primary !important;
 }
 p {
-  line-height: 1.75 !important;
+  font-family: Gotham, system-ui, sans-serif !important;
   font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
 }
 a {
   color: #005FB9;
@@ -40,45 +42,47 @@ a:active {
 }
 .d-header {
   box-shadow: none !important;
-  border: 1px solid #d2d7dc !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: #D2D7DC !important;
 }
 .btn,
 .btn-danger {
-  font-size: 12px !important;
+  font-size: 0.8125rem !important;
   text-transform: uppercase !important;
-  letter-spacing: .0625em !important;
+  letter-spacing: 0.0625em !important;
 }
 .btn-primary {
-  font-size: 12px !important;
+  font-size: 0.8125rem !important;
   background: $quaternary !important;
   text-transform: uppercase !important;
-  letter-spacing: .0625em !important;
+  letter-spacing: 0.0625em !important;
 }
 .btn-primary:hover,
 .btn-primary.btn-hover {
-  background: #40AD87 !important;
+  background-color: #40AD87 !important;
 }
 .btn-primary:active,
 .btn-primary.btn-active {
   font-weight: 500 !important;
 }
 .btn-flat {
-  font-size: 12px !important;
+  font-size: 0.8125rem !important;
   text-transform: uppercase !important;
-  letter-spacing: .0625em !important;
+  letter-spacing: 0.0625em !important;
 }
 .alert.alert-info {
-  background-color: #deefff !important;
+  background-color: #DEEFFF !important;
 }
 .full-width {
-  background: #fff !important;
+  background-color: #ffffff !important;
   padding: 12px !important;
   margin-bottom: 20px !important;
 }
 .nav-pills > li > a {
-  font-size: 12px !important;
+  font-size: 0.8125rem !important;
   text-transform: uppercase !important;
-  letter-spacing: .0625em !important;
+  letter-spacing: 0.0625em !important;
 }
 .nav-pills > li > a:hover {
   color: $secondary !important;
@@ -89,25 +93,25 @@ a:active {
   font-weight: 500 !important;
 }
 .admin-contents table td {
-  border-bottom: 1px solid #d2d7dc;
-  border-top: 1px solid #d2d7dc;
+  border-bottom: 1px solid #D2D7DC;
+  border-top: 1px solid #D2D7DC;
 }
 .admin-contents {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 .dashboard-stats table th {
-  background: #F5F6F7 !important;
+  background-color: #F5F6F7 !important;
 }
 .admin-controls {
-  background-color: #fff !important;
+  background-color: #ffffff !important;
 }
 .admin-controls .nav.nav-pills li.active a {
   border-color: $quaternary !important;
   background-color: $quaternary !important;
 }
 .nav-stacked {
-  background: #F5F6F7 !important;
+  background-color: #F5F6F7 !important;
 }
 .nav-stacked li {
   border-bottom: 1px solid #F5F6F7 !important;
@@ -129,23 +133,24 @@ span.first {
   border-top: 0px !important;
 }
 .select-kit.combo-box.category-drop .category-drop-header {
-  font-size: 12px !important;
+  font-size: 0.8125rem !important;
   text-transform: uppercase !important;
+  letter-spacing: 0.0625em !important;
 }
 .select-kit-body {
-  font-size: 12px !important;
+  font-size: 0.8125rem !important;
   letter-spacing: .0625em !important;
 }
 .select-kit.dropdown-select-box .select-kit-row .texts .desc {
   text-transform: none !important;
-  font-size: .8125rem !important;
+  font-size: 0.8125rem !important;
   letter-spacing: normal !important;
 }
 .select-kit .category-row .category-desc {
   text-transform: none !important;
 }
 .badge-wrapper {
-  font-size: .8125em !important;
+  font-size: 0.8125rem !important;
 }
 .menu-panel ul.menu-links li a:hover,
 .menu-panel ul li.heading a:hover {
@@ -157,19 +162,20 @@ span.first {
 #topic-footer-buttons .topic-notifications-button .reason,
 #topic-footer-buttons .pinned-button .reason {
   line-height: 1.2 !important;
-  font-size: .8125em !important;
+  font-size: 0.8125rem !important;
 }
 .select-kit.combo-box .select-kit-header {
+  font-size: 0.8125rem !important;
   text-transform: uppercase !important;
-  font-size: 12px !important;
+  letter-spacing: 0.0625em !important;
 }
 .select-kit .select-kit-collection {
   text-transform: uppercase !important;
 }
 .submit-panel {
-  font-size: 12px !important;
+  font-size: 0.8125rem !important;
   text-transform: uppercase !important;
-  letter-spacing: .0625em !important;
+  letter-spacing: 0.0625em !important;
 }
 .timeline-container .topic-timeline .timeline-scrollarea {
   border-color: #008255 !important;

@@ -1,8 +1,8 @@
-.nw-custom-header {
-  background-color: $quaternary !important;
+nav {
+  background-color: $quaternary;
 }
-.nw-custom-header__link {
-  color: $secondary !important;
+nav a {
+  color: $secondary;
   padding: 1rem;
   font-family: Gotham, system-ui, sans-serif;
   font-weight: 800;
@@ -10,12 +10,12 @@
   line-height: 1.4;
 }
 @media (min-width: 27.5rem) {
-  .nw-custom-header__link {
+  nav a {
     font-size: calc(1.25rem + 0.375 * (100vw - 27.5rem) / 54.5);
   }
 }
 @media (min-width: 82rem) {
-  .nw-custom-header__link {
+  nav a {
     font-size: 1.625rem;
     line-height: 1.23;
   }

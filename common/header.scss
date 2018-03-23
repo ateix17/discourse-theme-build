@@ -2,12 +2,23 @@ nav {
   background-color: $quaternary;
 }
 nav a {
-  color: $secondary;
-  padding: 1rem;
+  color: $secondary !important;
+  padding: 1.75rem;
   font-family: Gotham, system-ui, sans-serif;
   font-weight: 800;
   font-size: 1.25rem;
   line-height: 1.4;
+  font-size: 600 !important;
+}
+@media (min-width: 27.5rem) {
+  nav a {
+    padding: calc(1.75rem + 0.25 * (100vw - 27.5rem) / 54.5);
+  }
+}
+@media (min-width: 82rem) {
+  nav a {
+    padding: 2rem;
+  }
 }
 @media (min-width: 27.5rem) {
   nav a {

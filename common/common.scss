@@ -195,7 +195,6 @@ span.first {
 /* Header and footer styles */
 .nw-custom-header {
   background-color: $quaternary;
-  height: 35px;
 }
 .nw-custom-header__link {
   color: $secondary !important;
@@ -203,8 +202,8 @@ span.first {
   font-weight: 800;
   font-size: 1.25rem;
   line-height: 1.4;
+  padding-right: 1rem;
   font-weight: 600 !important;
-  line-height: 35px;
 }
 @media (min-width: 27.5rem) {
   .nw-custom-header__link {
@@ -216,9 +215,6 @@ span.first {
     font-size: 1.625rem;
     line-height: 1.23;
   }
-}
-.nw-custom-header__link + .nw-custom-header__link {
-  padding-left: 1rem;
 }
 /* Nerdwallet footer styles */
 .nw-global-footer {

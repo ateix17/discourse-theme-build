@@ -1,7 +1,7 @@
 nav#nw-custom-header {
   background-color: $quaternary;
 }
-nav#nw-custom-header .nw-custom-header__link {
+nav#nw-custom-header a.nw-custom-header__link {
   color: $secondary !important;
   padding: 1rem;
   font-family: Gotham, system-ui, sans-serif;
@@ -11,12 +11,12 @@ nav#nw-custom-header .nw-custom-header__link {
   font-weight: 600 !important;
 }
 @media (min-width: 27.5rem) {
-  nav#nw-custom-header .nw-custom-header__link {
+  nav#nw-custom-header a.nw-custom-header__link {
     font-size: calc(1.25rem + 0.375 * (100vw - 27.5rem) / 54.5);
   }
 }
 @media (min-width: 82rem) {
-  nav#nw-custom-header .nw-custom-header__link {
+  nav#nw-custom-header a.nw-custom-header__link {
     font-size: 1.625rem;
     line-height: 1.23;
   }

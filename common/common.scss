@@ -62,10 +62,6 @@ a:active {
 .btn-primary.btn-hover {
   background-color: #40AD87 !important;
 }
-.btn-primary:active,
-.btn-primary.btn-active {
-  font-weight: 500 !important;
-}
 .btn-flat {
   font-size: 0.8125rem !important;
   text-transform: uppercase !important;
@@ -88,13 +84,12 @@ a:active {
   color: $secondary !important;
   background-color: #40AD87 !important;
 }
-.nav-pills > li.active > a,
-.nav-pills > li > a.active {
-  font-weight: 500 !important;
-}
 .admin-contents table td {
-  border-bottom: 1px solid #D2D7DC;
-  border-top: 1px solid #D2D7DC;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-top-style: solid !important;
+  border-top-width: 1px !important;
+  border-color: #D2D7DC !important;
 }
 .admin-contents {
   margin-left: 0 !important;
@@ -114,13 +109,19 @@ a:active {
   background-color: #F5F6F7 !important;
 }
 .nav-stacked li {
-  border-bottom: 1px solid #F5F6F7 !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-color: #F5F6F7 !important;
 }
 .content-list ul li {
-  border-bottom: 1px solid #D2D7DC !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-color: #D2D7DC !important;
 }
 .content-list ul li:first-of-type {
-  border-top: 1px solid #D2D7DC !important;
+  border-top-style: solid !important;
+  border-top-width: 1px !important;
+  border-color: #D2D7DC !important;
 }
 .content-list ul li a:hover {
   background-color: #F5F6F7 !important;
@@ -130,7 +131,7 @@ span.first {
   font-family: GothamBold;
 }
 .small-action {
-  border-top: 0px !important;
+  border-top-width: 0 !important;
 }
 .select-kit.combo-box.category-drop .category-drop-header {
   font-size: 0.8125rem !important;
@@ -191,7 +192,29 @@ span.first {
     width: calc(100% - 64px) !important;
   }
 }
-/* Footer styles */
+/* Header and footer styles */
+.nw-custom-header {
+  background-color: $quaternary !important;
+}
+.nw-custom-header__link {
+  color: $secondary !important;
+  padding: 1rem;
+  font-family: Gotham, system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+@media (min-width: 27.5rem) {
+  .nw-custom-header__link {
+    font-size: calc(1.25rem + 0.375 * (100vw - 27.5rem) / 54.5);
+  }
+}
+@media (min-width: 82rem) {
+  .nw-custom-header__link {
+    font-size: 1.625rem;
+    line-height: 1.23;
+  }
+}
 /* Nerdwallet footer styles */
 .nw-global-footer {
   /* reset some discourse styles */

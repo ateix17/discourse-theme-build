@@ -202,7 +202,10 @@ span.first {
   font-weight: 800;
   font-size: 1.25rem;
   line-height: 1.4;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   padding-right: 1rem;
+  display: inline-block;
   font-weight: 600 !important;
 }
 @media (min-width: 27.5rem) {
